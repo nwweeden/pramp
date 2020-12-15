@@ -22,7 +22,7 @@ function flattenDictionary(dict) {
   return output;
 }
 
-/*There solution*/
+/*Their solution*/
 
 function flattenDictionary(dict):
     flatDictionary = {}
