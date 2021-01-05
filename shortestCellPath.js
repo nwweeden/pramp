@@ -6,6 +6,41 @@ Each location in the path, including the start and the end, must be a 1. Each su
 It is guaranteed that grid[sr][sc] = grid[tr][tc] = 1, and the starting and target positions are different.
 
 If the task is impossible, return -1.
+
+[[1*, 1, 1, 1],
+ [0, 0, 0, 1],
+ [1*, 1, 1, 1]] => 8 
+ 
+ if no route, => -1
+ 
+ [[1,1]] => 1
+ 
+ [[1,1],
+  [0,1]] => 2
+  
+ [[*1,1,^1],
+  [1,0,1],
+  [1,1,1]] => 2
+  
+ [[*2, 1,^1],
+  [ 5, 0, 1],
+  [ 4, 3, 2]]
+  
+  
+      1
+     / \
+    1   0
+   / \
+  1   0
+  grid[nr][nc]
+  
+  starting point at queue
+  shift off queue
+  if that value is 0, then break
+  if point is ending point return depth
+  if value is 1 and not end point putting local points back in
+
+  
  * 
  */
 
